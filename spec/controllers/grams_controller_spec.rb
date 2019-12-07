@@ -33,7 +33,7 @@ RSpec.describe GramsController, type: :controller do
             gram = FactoryBot.create(:gram)
             gram = FactoryBot.create(:user)
             sign_in user
-            patch :update, params: { id: gramd.id, gram: { message: 'wahoo' } }
+            patch :update, params: { id: gram.id, gram: { message: 'wahoo' } }
             expect(response).to have_http_status(:forbidden)
         end
 
