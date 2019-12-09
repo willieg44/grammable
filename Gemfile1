@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+group :devlopment, :test do 
+    gem 'spec'
+end
